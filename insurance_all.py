@@ -7,16 +7,16 @@ path_repo = '' # cloud
 
 class Insurance_all(object):
     def __init__(self):
-        self.ss_annual_premium = pickle.load(open(path_repo + r'\features\ss_annual_premium.pkl', 'rb'))
-        self.mm_age = pickle.load(open(path_repo + r'\features\mm_age.pkl', 'rb'))
-        self.map_vehicle_age = pickle.load(open(path_repo + r'\features\map_vehicle_age.pkl', 'rb'))
-        self.map_gender = pickle.load(open(path_repo + r'\features\map_gender.pkl', 'rb'))
-        self.map_vehicle_damage = pickle.load(open(path_repo + r'\features\map_vehicle_damage.pkl', 'rb'))
-        self.map_region_code = pickle.load(open(path_repo + r'\features\map_region_code.pkl', 'rb'))
-        self.map_policy_sales_channel = pickle.load(open(path_repo + r'\features\map_policy_sales_channel.pkl', 'rb'))
-        self.features_drop = pickle.load(open(path_repo + r'\features\features_drop.pkl', 'rb'))
-        self.vintage_cicle = pickle.load(open(path_repo + r'\features\vintage_cicle.pkl', 'rb'))
-        self.model = pickle.load(open(path_repo + r'\models\model.pkl', 'rb'))
+        self.ss_annual_premium = pickle.load(open(path_repo + r'features/ss_annual_premium.pkl', 'rb'))
+        self.mm_age = pickle.load(open(path_repo + r'features/mm_age.pkl', 'rb'))
+        self.map_vehicle_age = pickle.load(open(path_repo + r'features/map_vehicle_age.pkl', 'rb'))
+        self.map_gender = pickle.load(open(path_repo + r'features/map_gender.pkl', 'rb'))
+        self.map_vehicle_damage = pickle.load(open(path_repo + r'features/map_vehicle_damage.pkl', 'rb'))
+        self.map_region_code = pickle.load(open(path_repo + r'features/map_region_code.pkl', 'rb'))
+        self.map_policy_sales_channel = pickle.load(open(path_repo + r'features/map_policy_sales_channel.pkl', 'rb'))
+        self.features_drop = pickle.load(open(path_repo + r'features/features_drop.pkl', 'rb'))
+        self.vintage_cicle = pickle.load(open(path_repo + r'features/vintage_cicle.pkl', 'rb'))
+        self.model = pickle.load(open(path_repo + r'models/model.pkl', 'rb'))
 
     def data_cleaning(self, df_raw):
         # lowercase columns
